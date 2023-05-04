@@ -16,6 +16,7 @@
 		41C6AE0F2A038E46004F708F /* Push_NotificatonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C6AE0E2A038E46004F708F /* Push_NotificatonsTests.swift */; };
 		41C6AE192A038E46004F708F /* Push_NotificatonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C6AE182A038E46004F708F /* Push_NotificatonsUITests.swift */; };
 		41C6AE1B2A038E46004F708F /* Push_NotificatonsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C6AE1A2A038E46004F708F /* Push_NotificatonsUITestsLaunchTests.swift */; };
+		41C6AE282A0393D7004F708F /* NotificationTest.apns in Resources */ = {isa = PBXBuildFile; fileRef = 41C6AE272A0393D7004F708F /* NotificationTest.apns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		41C6AE142A038E46004F708F /* Push NotificatonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Push NotificatonsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C6AE182A038E46004F708F /* Push_NotificatonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push_NotificatonsUITests.swift; sourceTree = "<group>"; };
 		41C6AE1A2A038E46004F708F /* Push_NotificatonsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push_NotificatonsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		41C6AE272A0393D7004F708F /* NotificationTest.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationTest.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				41C6ADF72A038E43004F708F /* AppDelegate.swift */,
 				41C6ADF92A038E43004F708F /* SceneDelegate.swift */,
 				41C6ADFB2A038E43004F708F /* ViewController.swift */,
+				41C6AE272A0393D7004F708F /* NotificationTest.apns */,
 				41C6ADFD2A038E43004F708F /* Main.storyboard */,
 				41C6AE002A038E46004F708F /* Assets.xcassets */,
 				41C6AE022A038E46004F708F /* LaunchScreen.storyboard */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C6AE282A0393D7004F708F /* NotificationTest.apns in Resources */,
 				41C6AE042A038E46004F708F /* LaunchScreen.storyboard in Resources */,
 				41C6AE012A038E46004F708F /* Assets.xcassets in Resources */,
 				41C6ADFF2A038E43004F708F /* Main.storyboard in Resources */,

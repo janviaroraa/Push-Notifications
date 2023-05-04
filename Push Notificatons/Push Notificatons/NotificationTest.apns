@@ -1,0 +1,9 @@
+{
+    "aps" : {
+        "alert" : {
+            "title" : "SwiftlyRush Bank 🏦",
+            "body" : "You have some more money!"
+        },
+    },
+    "Simulator Target Bundle": "com.swiftlyrush.SwiftlyRush-Bank-Push-Notifications"
+}
