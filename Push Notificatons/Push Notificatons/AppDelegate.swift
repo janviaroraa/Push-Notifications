@@ -39,6 +39,23 @@ extension AppDelegate {
         /// Setting the delegate so we can receive delegate callbacks
         UNUserNotificationCenter.current().delegate = self
         
+        // 1
+        let viewAction = UNNotificationAction(
+            identifier: "identifier",
+            title: "View",
+            options: [.foreground])
+        
+        // 2
+        let newsCategory = UNNotificationCategory(
+            identifier: "identifier",
+            actions: [viewAction],
+            intentIdentifiers: [],
+            options: [])
+        
+        // 3
+        UNUserNotificationCenter.current().setNotificationCategories([newsCategory])
+
+        
         /// Requesting authentication from user
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
             
@@ -61,5 +78,34 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print(error)
+    }
+}
+
+extension AppDelegate {
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        didReceive response: UNNotificationResponse,
+        withCompletionHandler completionHandler: @escaping () -> Void
+    ) {
+        // 1
+        let userInfo = response.notification.request.content.userInfo
+        
+        // 2
+//        if
+//            let aps = userInfo["aps"] as? [String: AnyObject],
+//            let newsItem = NewsItem.makeNewsItem(aps) {
+//            (window?.rootViewController as? UITabBarController)?.selectedIndex = 1
+//
+//            // 3
+//            if response.actionIdentifier == Identifiers.viewAction,
+//               let url = URL(string: newsItem.link) {
+//                let safari = SFSafariViewController(url: url)
+//                window?.rootViewController?
+//                    .present(safari, animated: true, completion: nil)
+//            }
+//        }
+        
+        // 4
+        completionHandler()
     }
 }
